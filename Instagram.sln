@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Instagram.WebApi", "Instagram.WebApi\Instagram.WebApi.csproj", "{78E329CA-EDCB-43B3-9D77-0420A9EC5E0F}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{4FD5E4A7-852D-4450-A150-4ACF9220EF01}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78E329CA-EDCB-43B3-9D77-0420A9EC5E0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78E329CA-EDCB-43B3-9D77-0420A9EC5E0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78E329CA-EDCB-43B3-9D77-0420A9EC5E0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78E329CA-EDCB-43B3-9D77-0420A9EC5E0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FD5E4A7-852D-4450-A150-4ACF9220EF01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FD5E4A7-852D-4450-A150-4ACF9220EF01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FD5E4A7-852D-4450-A150-4ACF9220EF01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FD5E4A7-852D-4450-A150-4ACF9220EF01}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
