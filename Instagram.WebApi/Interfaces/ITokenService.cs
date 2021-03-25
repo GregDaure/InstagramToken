@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Threading.Tasks;
+using Instagram.WebApi.Models;
 
 namespace Instagram.WebApi.Interfaces
 {
     public interface ITokenService
     {
-        Task<string> RenewToken(string token);
+        Task<TokenOuput> RenewToken(string token);
     }
 }

@@ -3,17 +3,15 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web;
 using Instagram.WebApi.Interfaces;
+using Instagram.WebApi.Models;
+using Newtonsoft.Json;
 
 namespace Instagram.WebApi.Services
 {
     public class TokenService : ITokenService
     {
-        public async Task<string> RenewToken(string token)
+        public async Task<TokenOuput> RenewToken(string token)
         {
-            if (token is null)
-            {
-                return "No token to renew";
-            }
             using (var client = new HttpClient())
             {
                 var builder = new UriBuilder("https://graph.instagram.com/refresh_access_token");
@@ -24,7 +22,7 @@ namespace Instagram.WebApi.Services
                 builder.Query = query.ToString();
 
                 var res = await client.GetStringAsync(builder.ToString());
-                return res;
+                return JsonConvert.DeserializeObject<TokenOuput>(res);
             }
         }
     }

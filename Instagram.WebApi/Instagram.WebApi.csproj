@@ -11,5 +11,15 @@
     <Folder Include="Controllers\" />
     <Folder Include="Interfaces\" />
     <Folder Include="Services\" />
+    <Folder Include="Serializers\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Instagram.Entity\Instagram.Entity.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 </Project>

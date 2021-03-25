@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Instagram.WebApi", "Instagr
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{4FD5E4A7-852D-4450-A150-4ACF9220EF01}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Instagram.Entity", "Instagram.Entity\Instagram.Entity.csproj", "{B0B7023D-F0B2-4983-88CB-F93DA48C4FA9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,5 +21,9 @@ Global
 		{4FD5E4A7-852D-4450-A150-4ACF9220EF01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FD5E4A7-852D-4450-A150-4ACF9220EF01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4FD5E4A7-852D-4450-A150-4ACF9220EF01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0B7023D-F0B2-4983-88CB-F93DA48C4FA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0B7023D-F0B2-4983-88CB-F93DA48C4FA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0B7023D-F0B2-4983-88CB-F93DA48C4FA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0B7023D-F0B2-4983-88CB-F93DA48C4FA9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

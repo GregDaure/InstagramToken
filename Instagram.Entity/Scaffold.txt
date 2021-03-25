@@ -1,0 +1,1 @@
+﻿dotnet ef dbcontext scaffold 'server=10.0.0.108;port=3306;user=Melanie;password=Melanie123!;database=wordpress' MySql.Data.EntityFrameworkCore -c SoFoodMelContext --context-dir Context -o Models -t wp_options -f
