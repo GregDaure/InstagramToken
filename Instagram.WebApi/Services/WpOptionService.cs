@@ -40,7 +40,7 @@ namespace Instagram.WebApi.Services
                 OptionName = option.OptionName,
                 OptionValue = serializer.Serialize(decoded)
             };
-            await _repository.Update(newOption);
+            _repository.Update(newOption);
 
         }
     }

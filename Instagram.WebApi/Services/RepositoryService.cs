@@ -17,10 +17,16 @@ namespace Instagram.WebApi.Services
             _context = context;
         }
 
-        public async Task Update(T obj)
+        public void Update(T obj)
         {
-            _context.Set<T>().Update(obj);
-            await _context.SaveChangesAsync();
+            using(var transaction = _context.Database.BeginTransaction())
+            {
+                _context.Set<T>().Update(obj);
+                _context.SaveChanges();
+
+                transaction.Commit();
+            }
+            
         }
 
         public IEnumerable<T> GetAll()
